@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Wordle Helper</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="filter.js"></script>
+    </head>
+    <style>
+    body{
+        background: #121213;
+        color: #fff;
+        font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    .characterbox, .containedbox, .notcharacterbox, .eliminatedbox, .submissionbox{
+        width: 50%;
+        border-bottom: 1px solid #fff;
+        padding: 1rem;
+        float: left;
+        height: 350px;
+        box-sizing: border-box;
+    }
+    .submissionbox {
+        border: none;
+        height: 80px;
+    }
+    .characterbox, .containedbox{
+        height: 310px;
+    }
+    .resultsbox{
+        width: 40%;
+        float: left;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        box-sizing: border-box;
+        border-top: 1px solid #fff;
+    }
+    .formbox{
+        width: 60%;
+        float: left;
+        border-right: 1px solid #fff;
+        box-sizing: border-box;
+        border-top: 1px solid #fff;
+    }
+    input {
+        margin-bottom: 1rem;
+    }
+    h1 {
+        text-align: center;
+    }
+
+    </style>
+    <h1>Wordle Helper</h1>
+    <body>
+        <div class=formbox>
+            <form action="" method="get">
+                <div class="characterbox">
+                    <label>First Character</label><br>
+                    <input type="text" id="firstcharacter" maxlength="1"></input><br>
+                    <label>Second Character</label><br>
+                    <input type="text" id="secondcharacter" maxlength="1"></input><br>
+                    <label>Third Character</label><br>
+                    <input type="text" id="thirdcharacter" maxlength="1"></input><br>
+                    <label>Fourth Character</label><br>
+                    <input type="text" id="fourthcharacter" maxlength="1"></input><br>
+                    <label>Fifth Character</label><br>
+                    <input type="text" id="fifthcharacter" maxlength="1"></input><br>
+                </div>
+                <div class="containedbox">
+                    <label>Contains</label><br>
+                    <input type="text" id="hasone" maxlength="1"></input><br>
+                    <label>Contains</label><br>
+                    <input type="text" id="hastwo" maxlength="1"></input><br>
+                    <label>Contains</label><br>
+                    <input type="text" id="hasthree" maxlength="1"></input><br>
+                    <label>Contains</label><br>
+                    <input type="text" id="hasfour" maxlength="1"></input><br>
+                    <label>Contains</label><br>
+                    <input type="text" id="hasfive" maxlength="1"></input><br>
+                </div>
+                <div class="notcharacterbox">
+                    <label>Not First Character</label><br>
+                    <input type="text" id="notfirstcharacter" maxlength="1"></input><br>
+                    <label>Not Second Character</label><br>
+                    <input type="text" id="notsecondcharacter" maxlength="1"></input><br>
+                    <label>Not Third Character</label><br>
+                    <input type="text" id="notthirdcharacter" maxlength="1"></input><br>
+                    <label>Not Fourth Character</label><br>
+                    <input type="text" id="notfourthcharacter" maxlength="1"></input><br>
+                    <label>Not Fifth Character</label><br>
+                    <input type="text" id="notfifthcharacter" maxlength="1"></input><br>
+                </div>
+                <div class="eliminatedbox">
+                    <label>Eliminated letter</label><br>
+                    <input type="text" id="doesntone" maxlength="1"></input><br>
+                    <label>Eliminated letter</label><br>
+                    <input type="text" id="doesnttwo" maxlength="1"></input><br>
+                    <label>Eliminated letter</label><br>
+                    <input type="text" id="doesntthree" maxlength="1"></input><br>
+                    <label>Eliminated letter</label><br>
+                    <input type="text" id="doesntfour" maxlength="1"></input><br>
+                    <label>Eliminated letter</label><br>
+                    <input type="text" id="doesntfive" maxlength="1"></input><br>
+                    <label>Eliminated letter</label><br>
+                    <input type="text" id="doesntsix" maxlength="1"></input><br>
+                </div>
+                <div class="submissionbox">
+                    <label>Use old words: </label>
+                    <input type="checkbox" id="checkbox" /><br>
+                    <input type="submit" id="submit" name="submit" value="Search"/>
+                </div>
+            </form>
+        </div>
+        <div class="resultsbox">
+            <h2>Results</h2>
+            <div id="p" >The words go here.</div>
+            <div id="p1" style="max-width:800px;word-wrap: break-word;"></div>
+        </div>
+    </body>
+</html>
