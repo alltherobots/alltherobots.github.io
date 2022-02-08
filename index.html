@@ -7,69 +7,72 @@
     </head>
     <h1>Wordle Helper</h1>
     <body>
-        <div class=formbox>
-            <form action="" method="get">
-                <div class="characterbox">
-                    <label>First Character</label><br>
-                    <input type="text" id="firstcharacter" maxlength="1"></input><br>
-                    <label>Second Character</label><br>
-                    <input type="text" id="secondcharacter" maxlength="1"></input><br>
-                    <label>Third Character</label><br>
-                    <input type="text" id="thirdcharacter" maxlength="1"></input><br>
-                    <label>Fourth Character</label><br>
-                    <input type="text" id="fourthcharacter" maxlength="1"></input><br>
-                    <label>Fifth Character</label><br>
-                    <input type="text" id="fifthcharacter" maxlength="1"></input><br>
-                </div>
-                <div class="containedbox">
-                    <label>Contains</label><br>
-                    <input type="text" id="hasone" maxlength="1"></input><br>
-                    <label>Contains</label><br>
-                    <input type="text" id="hastwo" maxlength="1"></input><br>
-                    <label>Contains</label><br>
-                    <input type="text" id="hasthree" maxlength="1"></input><br>
-                    <label>Contains</label><br>
-                    <input type="text" id="hasfour" maxlength="1"></input><br>
-                    <label>Contains</label><br>
-                    <input type="text" id="hasfive" maxlength="1"></input><br>
-                </div>
-                <div class="notcharacterbox">
-                    <label>Not First Character</label><br>
-                    <input type="text" id="notfirstcharacter" maxlength="1"></input><br>
-                    <label>Not Second Character</label><br>
-                    <input type="text" id="notsecondcharacter" maxlength="1"></input><br>
-                    <label>Not Third Character</label><br>
-                    <input type="text" id="notthirdcharacter" maxlength="1"></input><br>
-                    <label>Not Fourth Character</label><br>
-                    <input type="text" id="notfourthcharacter" maxlength="1"></input><br>
-                    <label>Not Fifth Character</label><br>
-                    <input type="text" id="notfifthcharacter" maxlength="1"></input><br>
-                </div>
-                <div class="eliminatedbox">
-                    <label>Eliminated letter</label><br>
-                    <input type="text" id="doesntone" maxlength="1"></input><br>
-                    <label>Eliminated letter</label><br>
-                    <input type="text" id="doesnttwo" maxlength="1"></input><br>
-                    <label>Eliminated letter</label><br>
-                    <input type="text" id="doesntthree" maxlength="1"></input><br>
-                    <label>Eliminated letter</label><br>
-                    <input type="text" id="doesntfour" maxlength="1"></input><br>
-                    <label>Eliminated letter</label><br>
-                    <input type="text" id="doesntfive" maxlength="1"></input><br>
-                    <label>Eliminated letter</label><br>
-                    <input type="text" id="doesntsix" maxlength="1"></input><br>
-                </div>
-                <div class="submissionbox">
-                    <label>Use old words: </label>
-                    <input type="checkbox" id="checkbox" /><br>
-                    <input type="submit" id="submit" name="submit" value="Search"/>
-                </div>
-            </form>
-        </div>
-        <div class="resultsbox">
-            <h2>Results</h2>
-            <div id="p" >The words go here.</div>
-            <div id="p1 result"></div>
+        <div class="container">
+            <div class=formbox>
+                <form action="" method="get">
+                    <div class="submissionbox">
+                        <label>Use old words: </label>
+                        <input type="checkbox" id="checkbox" />
+                        <input type="submit" id="submit" name="submit" value="Search" class="search"/>
+                    </div>
+                    <div class="characterbox">
+                        <label>First Character</label><br>
+                        <input type="text" id="firstcharacter" maxlength="1"></input><br>
+                        <label>Second Character</label><br>
+                        <input type="text" id="secondcharacter" maxlength="1"></input><br>
+                        <label>Third Character</label><br>
+                        <input type="text" id="thirdcharacter" maxlength="1"></input><br>
+                        <label>Fourth Character</label><br>
+                        <input type="text" id="fourthcharacter" maxlength="1"></input><br>
+                        <label>Fifth Character</label><br>
+                        <input type="text" id="fifthcharacter" maxlength="1"></input><br>
+                    </div>
+                    <div class="containedbox">
+                        <label>Contains</label><br>
+                        <input type="text" id="hasone" maxlength="1"></input><br>
+                        <label>Contains</label><br>
+                        <input type="text" id="hastwo" maxlength="1"></input><br>
+                        <label>Contains</label><br>
+                        <input type="text" id="hasthree" maxlength="1"></input><br>
+                        <label>Contains</label><br>
+                        <input type="text" id="hasfour" maxlength="1"></input><br>
+                        <label>Contains</label><br>
+                        <input type="text" id="hasfive" maxlength="1"></input><br>
+                    </div>
+                    <div class="notcharacterbox">
+                        <label>Not First Character</label><br>
+                        <input type="text" id="notfirstcharacter" maxlength="1"></input><br>
+                        <label>Not Second Character</label><br>
+                        <input type="text" id="notsecondcharacter" maxlength="1"></input><br>
+                        <label>Not Third Character</label><br>
+                        <input type="text" id="notthirdcharacter" maxlength="1"></input><br>
+                        <label>Not Fourth Character</label><br>
+                        <input type="text" id="notfourthcharacter" maxlength="1"></input><br>
+                        <label>Not Fifth Character</label><br>
+                        <input type="text" id="notfifthcharacter" maxlength="1"></input><br>
+                    </div>
+                    <div class="eliminatedbox">
+                        <label>Eliminated letter</label><br>
+                        <input type="text" id="doesntone" maxlength="1"></input><br>
+                        <label>Eliminated letter</label><br>
+                        <input type="text" id="doesnttwo" maxlength="1"></input><br>
+                        <label>Eliminated letter</label><br>
+                        <input type="text" id="doesntthree" maxlength="1"></input><br>
+                        <label>Eliminated letter</label><br>
+                        <input type="text" id="doesntfour" maxlength="1"></input><br>
+                        <label>Eliminated letter</label><br>
+                        <input type="text" id="doesntfive" maxlength="1"></input><br>
+                        <label>Eliminated letter</label><br>
+                        <input type="text" id="doesntsix" maxlength="1"></input><br>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="resultsbox">
+                <h2>Results</h2>
+                <div id="p" ></div>
+                <div id="p1"></div>
+            </div>
         </div>
     </body>
 </html>
