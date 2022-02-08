@@ -16,6 +16,7 @@ body{
 .submissionbox {
     border: none;
     height: 80px;
+    width: 100%;
 }
 
 .characterbox, .containedbox{
@@ -45,9 +46,45 @@ input {
 
 h1 {
     text-align: center;
+    color: #9a60c4;
+    text-transform: uppercase;
 }
 
-.result {
-    max-width: 800px;
+#p1 {
     word-wrap: break-word;
+    padding-bottom: 1rem;
+}
+
+.search {
+    float: right;
+    height: 50px;
+    width: 170px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #9a60c4;
+    color: #fff;
+    border: none;
+}
+
+form input[type="text"] {
+    text-transform: lowercase;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex; 
+        flex-direction: column;
+    }
+    
+    .resultsbox, .formbox{
+        width: 100%;
+    }
+
+    .resultsbox {
+        order: 1;
+    }
+
+    .formbox {
+        order: 2;
+    }
 }
