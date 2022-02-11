@@ -9,27 +9,27 @@ $(document).ready(function(){
         }
 
         //filter for characters in specific positions
-        var firstChar = $('#firstcharacter').val();
+        var firstChar = $('#firstcharacter').val().toLowerCase();
         if(firstChar.length != 0){
             result = result.filter(word => word.charAt(0) == firstChar);
         }
 
-        var secondChar = $('#secondcharacter').val();
+        var secondChar = $('#secondcharacter').val().toLowerCase();
         if(secondChar.length != 0){
             result = result.filter(word => word.charAt(1) == secondChar);
         }
 
-        var thirdChar = $('#thirdcharacter').val();
+        var thirdChar = $('#thirdcharacter').val().toLowerCase();
         if(thirdChar.length != 0){
             result = result.filter(word => word.charAt(2) == thirdChar);
         }
 
-        var fourthChar = $('#fourthcharacter').val();
+        var fourthChar = $('#fourthcharacter').val().toLowerCase();
         if(fourthChar.length != 0){
             result = result.filter(word => word.charAt(3) == fourthChar);
         }
 
-        var fifthChar = $('#fifthcharacter').val();
+        var fifthChar = $('#fifthcharacter').val().toLowerCase();
         if(fifthChar.length != 0){
             result = result.filter(word => word.charAt(4) == fifthChar);
         }
